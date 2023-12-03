@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div id="All-Buttons">
+            <input type="text" class="All-Input" readonly >
+            <br><br>
+            <button type="button" onclick="main('1')">1</button>
+            <button type="button" onclick="main('2')">2</button>
+            <button type="button" onclick="main('3')">3</button>
+            <button type="button" onclick="clearInput()">AC</button>
+            <br><br>
+            <button type="button" onclick="main('4')">4</button>
+            <button type="button" onclick="main('5')">5</button>
+            <button type="button" onclick="main('6')">6</button>
+            <button type="button" onclick=" performOperation('+')">+</button>
+            <br><br>
+            <button type="button" onclick="main('7')">7</button>
+            <button type="button" onclick="main('8')">8</button>
+            <button type="button" onclick="main('9')">9</button>
+            <button type="button" onclick=" performOperation('-')">-</button>
+            <br><br>
+            <button type="button" onclick="main('0')">0</button>
+            <button type="button" onclick=" performOperation('*')">*</button>
+            <button type="button" onclick=" performOperation('/')">/</button>
+            <button type="button" onclick="calculateResult()">=</button>
+        </div>
+       
+    </main>
+    <script src="myscript.js"></script>
+
+   
+</body>
+</html>
